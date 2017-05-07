@@ -12,5 +12,6 @@
         android:hint="@string/edit1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+    <!--如果只这样写，那么在随便输入什么内容之后，按下back之后，数据就全部清空了-->
 
 </LinearLayout>
