@@ -13,7 +13,13 @@ import java.io.IOException;
 
 public class CloseUtil {
 
-    public static void closeQuietly(Closeable closeable) {
+    public static void closeQuietly(Closeable closeable)//调用Closeable的接口
+    /*
+    * 因为Writer implements Appendable, Closeable, Flushable(Writer这个类实现Closeable这个接口)
+    * 而BufferedWriter又继承Writer这个类
+    * 所以，
+    */
+    {
         if (null != closeable) {
             try {
                 closeable.close();

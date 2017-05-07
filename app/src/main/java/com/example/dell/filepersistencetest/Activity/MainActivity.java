@@ -1,4 +1,4 @@
-package com.example.dell.filepersistencetest;
+package com.example.dell.filepersistencetest.Activity;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -7,6 +7,7 @@ import android.text.TextUtils;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.dell.filepersistencetest.R;
 import com.example.dell.filepersistencetest.utils.CloseUtil;
 
 import java.io.BufferedReader;
