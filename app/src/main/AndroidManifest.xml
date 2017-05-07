@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.dell.filepersistencetest">
 
+    <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>-->
+
+    <!--当需要往存储卡里面写文件的时候，就需要设置权限，权限就是上面的这种写法-->
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
