@@ -53,13 +53,14 @@ public class MainActivity extends AppCompatActivity {
             out = openFileOutput("data", Context.MODE_PRIVATE);
             writer = new BufferedWriter(new OutputStreamWriter(out));
             writer.write(inputText);
-            writer.flush();
+            writer.flush();//flush()方法就是强制将缓冲里的数据写入流里
         }
         catch (IOException e)
         {
             e.printStackTrace();
         }finally {
-            CloseUtil.closeQuietly(writer);
+            CloseUtil.closeQuietly(writer);//最终的而方式，就是无论如何，finally里面的程序都是会被执行的
+            //利用closeable的接口，实现finally中的关闭writer
         }
 
     }

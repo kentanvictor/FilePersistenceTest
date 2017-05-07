@@ -17,6 +17,7 @@ public class CloseUtil {
     /*
     * 因为Writer implements Appendable, Closeable, Flushable(Writer这个类实现Closeable这个接口)
     * 而BufferedWriter又继承Writer这个类
+    * 所以所有继承了Writer的子类都可以使用这个接口，然后都可以实现closeQuietly这个方法
     * 所以，只需要这个接口的这个对象完成判断写入的字符是否为空
     * 这样就可以很好的避免冗长的代码量，并且，实现了封装
     * 其实，这就是一个多态的问题
