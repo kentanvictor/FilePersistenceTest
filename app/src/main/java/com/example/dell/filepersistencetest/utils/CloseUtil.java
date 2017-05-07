@@ -22,7 +22,8 @@ public class CloseUtil {
     * 其实，这就是一个多态的问题
     */
     {
-        if (null != closeable) {
+        if (null != closeable)
+        {
             try {
                 closeable.close();
             } catch (IOException e) {

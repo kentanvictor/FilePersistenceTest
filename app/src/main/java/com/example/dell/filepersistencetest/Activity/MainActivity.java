@@ -27,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
         edit = (EditText) findViewById(R.id.edit1);//在onCreate()方法中接收到EditText的实例
         String inputText = load();
         if(!TextUtils.isEmpty(inputText))
+        //如果读取的内容不为null，就调用EditText()的setText()方法，将内容填充到EditText中
+        //然后调用setSelection()方法，将输入的光标移动到根本的末尾的位置以便继续输入
         {
             edit.setText(inputText);
             edit.setSelection(inputText.length());
@@ -61,7 +63,12 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
-    public String load() {
+    public String load()
+    /*
+    * 这里的load()方法是用来读取文件的
+    *
+    * */
+    {
         FileInputStream in = null;
         BufferedReader reader = null;
         StringBuilder content = new StringBuilder();
