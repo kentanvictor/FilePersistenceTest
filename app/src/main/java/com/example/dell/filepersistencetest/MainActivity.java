@@ -25,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
         String inputText = edit.getText().toString();//重写onDestroy()方法，获取EditText的内容
             save(inputText);//调用save()方法，把输入的内容存储到文件中，文件名为data
     }
-
+//下面的是java中的IO流，用来写入文件与读取文件的
     public void save(String inputText)  {
         FileOutputStream out = null;
         BufferedWriter writer = null;
