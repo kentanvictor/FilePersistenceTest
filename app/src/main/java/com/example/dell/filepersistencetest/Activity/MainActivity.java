@@ -95,3 +95,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 }
+
+/*
+* 文件存储的核心技术就是：
+* Context类中提供的openFileInput()和openFileOutput()方法，之后就是利用java的各种流来进行读写操作
+*/
+//但是，文本存储方式不适合用于保存一些较为复杂的文本数据
