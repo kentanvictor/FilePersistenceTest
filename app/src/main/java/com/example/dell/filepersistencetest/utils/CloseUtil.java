@@ -28,7 +28,7 @@ public class CloseUtil {
             try {
                 closeable.close();
             } catch (IOException e) {
-                e.printStackTrace();
+                e.printStackTrace();//(printStackTrace的方法的意思是-->)在命令行打印异常信息在程序中出错的位置及原因
             }
         }
     }
